@@ -20,9 +20,9 @@ build_max_heap <- function(a){
     a <- max_heapify(a,i,length(a))
   return(a)
 }
-a <- rnorm(100)
+a <- rnorm(10)
 a <- build_max_heap(a)
-a==max_heapify(a,5,100)
+a==max_heapify(a,1,100)
 #利用前面两个函数建立起的最大堆进行排序
 heapsort <- function(a){
   a <- build_max_heap(a)
